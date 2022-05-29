@@ -1,0 +1,49 @@
+.always {
+  padding: 96px 0;
+}
+
+.title-small_color-0B4141,
+.text_color-0B4141 {
+  color: $color_0B4141;
+}
+
+.always__item {
+  display: flex;
+  gap:30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.always__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.always__content {
+  max-width: 464px;
+}
+
+.always__title-small {
+  margin-bottom: pm(32, 68);
+}
+
+.always__title-small_max-width {
+  max-width: 317px;
+}
+
+.always__text {
+  margin-bottom: pm(48, 24);
+}
+
+.scroll {
+  align-items: center;
+}
+
+.scroll__icon {
+  width: 16px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.scroll__text {
+  @include font-style(NunitoSans, rem(16), lh(22, 16), 600, $color_0B4141);
+}

@@ -1,0 +1,27 @@
+.detail,
+.unicorns{
+  @include center();
+  justify-content: space-between;
+  gap:30px;
+  padding:50px 0;
+  padding-right: max(15px,calc((100% - 1270px)/2));
+  padding-left:100px;
+}
+
+.title-small_mgb{
+  margin-bottom: pm(24,68);
+}
+
+.button_color-0B4141 {
+  color: $color_0B4141;
+  border-color: $color_0B4141;
+}
+
+.detail__right{
+  flex-shrink: 0;
+  max-width: 506px;
+}
+
+.detail__left{
+  width: calc(100% - 506px - 30px);
+}

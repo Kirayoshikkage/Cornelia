@@ -1,0 +1,24 @@
+@media (max-width:1023.98px) {
+  .detail,
+  .unicorns{
+    @include center();
+    gap: 30px;
+    padding: 50px 15px;
+    text-align: center;
+  }
+
+  .detail{
+    flex-direction: column;
+  }
+
+  .detail__left,
+  .unicorns__left{
+    max-width: 100%;
+    width: auto;
+  }
+
+  .unicorns__right{
+    display: none;
+  }
+
+}

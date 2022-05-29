@@ -1,0 +1,26 @@
+@import "./fonts";
+@import "./mixins";
+@import "./settings";
+@import "./vars";
+
+//стили
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/infinity";
+@import "./components/choose";
+@import "./components/always";
+@import "./components/happen";
+@import "./components/reviews";
+@import "./components/detail";
+@import "./components/unicorns";
+@import "./components/footer";
+
+
+//анимации
+
+@import "./components/animtation";
+
+//media
+
+@import "./media"

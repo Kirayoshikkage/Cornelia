@@ -1,0 +1,43 @@
+.infinity {
+  min-height: 100vh;
+  background: $color_FFCCBC url(../img/infinity/confety.webp);
+}
+
+.infinity__content,
+.infinity{
+  @include center()
+}
+
+.infinity__content{
+  flex-direction: column
+}
+
+.title-large{
+  @include font-style(Motter, rem(80), lh(96, 80), 400);
+  text-align: center;
+}
+
+.title-large_mgb{
+  margin-bottom: pm(24,80);
+}
+
+.infinity__title-large{
+  max-width: 832px;
+}
+
+.text{
+  @include font-style(NunitoSans, rem(24), lh(32, 24), 400);
+}
+
+.infinity__text{
+  text-align: center;
+  max-width: 747px;
+}
+
+.text_mgb{
+  margin-bottom: pm(48,24);
+}
+
+.text_bold{
+  font-weight: 800;
+}

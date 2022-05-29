@@ -1,0 +1,19 @@
+@media (max-width:767.98px){
+  .lead {
+    max-width: 100%;
+    font-size: rem(50);
+  }
+  .hero__content {
+    justify-content: center;
+  }
+  .hero {
+    min-height: 300px;
+    background: url(../img/hero/confettis_mobile.webp);
+    &::before {
+      right: 0;
+      max-width: 100px;
+      max-height: 106px;
+      background: url(../img/hero/horse_mobile.webp) no-repeat;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@media (max-width:767.98px){
+  .always__item {
+    flex-direction: column;
+    text-align: center;
+    gap:0;
+  }
+  .always__title-small_max-width {
+    max-width: 100%;
+  }
+  .scroll {
+    @include center();
+  }
+
+}

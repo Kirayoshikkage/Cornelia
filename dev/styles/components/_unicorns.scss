@@ -1,0 +1,22 @@
+.unicorns{
+  padding-left: max(15px,calc((100% - 1270px)/2));
+  padding-right:100px;
+}
+
+
+.unicorns__img{
+  display: block;
+  margin:0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.unicorns__left{
+  max-width: 472px;
+  flex-shrink: 0;
+}
+
+.unicorns__right{
+  text-align: end;
+  align-self: end;
+  width: calc(100% - 472px - 30px);
+}

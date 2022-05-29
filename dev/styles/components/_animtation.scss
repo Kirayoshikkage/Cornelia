@@ -1,0 +1,81 @@
+@media (min-width:768px) {
+  .menu__link {
+
+    &:hover {
+      color: $color_FFCCBC
+    }
+
+    &:focus {
+      background-color: rgb(146, 1, 1);
+      color: $color_FFCCBC
+    }
+  }
+
+  .navigation-button {
+
+    &:hover,
+    &:focus {
+      color: rgb(146, 1, 1);
+      background-color: $color_FFCCBC;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
+    }
+
+    &:active {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      transform: translateY(2px);
+    }
+  }
+
+}
+
+.button_aimation-dark {
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color_0B4141;
+    color: $color_FFCCBC;
+  }
+}
+
+.button_aimation-light {
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color_FFCCBC;
+    color: $color_0B4141;
+  }
+}
+
+@media (max-width:767.98px) {
+  .menu__link {
+    &:active {
+      background-color: rgb(146, 1, 1);
+      color: $color_FFCCBC
+    }
+  }
+
+  .navigation-button {
+    &:active {
+      color: $color_FFCCBC;
+      background-color: rgb(146, 1, 1);
+    }
+  }
+
+  .burger-icon {
+    &:active {
+      svg {
+        fill: $color_FFCCBC;
+      }
+    }
+  }
+
+  .burger__close {
+    &:active {
+      svg {
+        fill: rgb(146, 1, 1);
+      }
+    }
+  }
+}

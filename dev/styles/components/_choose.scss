@@ -1,0 +1,63 @@
+.choose{
+  min-height: 100vh;
+  padding:30px 0;
+  background: $color_0B4141;
+  @include center();
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom:0;
+    right: 0;
+    max-width: 720px;
+    max-height: 800px;
+    width: 40%;
+    height: 100%;
+    background: url(../img/choose/horse.webp) no-repeat;
+  }
+}
+
+.choose__container{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.choose__content{
+  max-width: 475px;
+}
+
+.text_color-FFCCBC{
+  color:$color_FFCCBC;
+}
+
+.title-small{
+  @include font-style(NunitoSans, rem(68), lh(72, 68), 900)
+}
+
+.title-small_color-FFCCBC{
+  color:$color_FFCCBC
+}
+
+.choose__title-small{
+  margin-bottom: pm(32,68);
+}
+
+.choose__text{
+  margin-bottom: pm(48,24);
+}
+
+.button{
+  transition-property: background-color, color;
+  transition-duration: .4s;
+  border-radius: 100px;
+  border:2px solid transparent;
+  @include font-style(NunitoSans, rem(18), lh(25, 18), 700);
+  padding:pm(14.5,18) pm(31,18);
+}
+
+.button_color-FFCCBC{
+  border-color: $color_FFCCBC;
+  color:$color_FFCCBC;
+}

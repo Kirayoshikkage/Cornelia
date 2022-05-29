@@ -1,0 +1,17 @@
+@media (max-width:767.98px){
+  .choose{
+    &::before {
+      background: none;
+    }
+  }
+  .choose__content{
+    max-width: 100%;
+    text-align: center
+  }
+  .title-small{
+    font-size: rem(40);
+  }
+  .button{
+    font-size: 1rem;
+  }
+}

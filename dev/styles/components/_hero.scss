@@ -1,0 +1,43 @@
+.hero {
+  min-height: calc(100vh - 91px);
+  align-items: center;
+  background: url(../img/hero/confettis.webp);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom:0;
+    right: 170px;
+    max-width: 520px;
+    max-height: 460px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/hero/horse.webp) no-repeat;
+  }
+}
+
+.hero__content {
+  width: 100%;
+  min-height: 100%;
+  padding: 0 35px;;
+  align-items: center;
+  justify-content: end;
+}
+
+.lead {
+  @include font-style(Motter, rem(120), lh(128, 120), 400, $color_FFCCBC);
+  max-width: 747px;
+  text-align: center;
+}
+
+.lead__span {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(180deg, #0B4141 45.83%, #0B1F1F 45.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 0 auto;
+}

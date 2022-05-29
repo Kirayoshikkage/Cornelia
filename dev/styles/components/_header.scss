@@ -1,0 +1,54 @@
+/*header*/
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.navigation__content {
+  padding: 22.5px 0;
+  align-items: center;
+}
+
+.navigation__logo {
+  flex-grow: 1;
+}
+
+.logo {
+  @include font-style(Motter, rem(26), lh(31, 26), 900, $color_0B4141)
+}
+
+.menu_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap:24px;
+}
+
+.navigation__menu {
+  margin-right: 50px;
+}
+
+.menu__link {
+  padding: 0 5px;
+  outline: 0;
+  transition-property: background-color, color;
+  transition-duration: .4s;
+  @include font-style(NunitoSans, rem(16), lh(22, 16), 600, $color_0B4141)
+}
+
+.navigation-button{
+  transition-property: background-color, color, box-shadow, transform;
+  transition-duration: .4s;
+  border-radius: 124px;
+  @include font-style(NunitoSans, rem(16), lh(22, 16), 600, $color_FFCCBC);
+  padding: pm(12, 16) pm(43.5, 16);
+  background-color: $color_0B4141;
+}
+
+.burger,
+.burger-icon{
+  display: none;
+}
+

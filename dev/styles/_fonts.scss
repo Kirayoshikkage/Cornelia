@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../fonts/#{$url}.woff2') format('woff2');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+@include font-face(NunitoSans,NunitoSans-Black,900);
+@include font-face(NunitoSans,NunitoSans-Bold,700);
+@include font-face(NunitoSans,NunitoSans-ExtraBold,800);
+@include font-face(NunitoSans,NunitoSans-Regular,400);
+@include font-face(Roboto,Roboto-Bold,700);
+@include font-face(Roboto,Roboto-Regular,400);
+@include font-face(Motter,Motter,400);

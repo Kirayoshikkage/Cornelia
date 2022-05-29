@@ -1,0 +1,57 @@
+@use 'sass:math';
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../fonts/#{$url}.woff2') format('woff2');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+;
+
+@mixin font-style ($font-family,$font-size, $line-height,$font-weight:400, $color: white) {
+  font-family: '#{$font-family}';
+	font-size: $font-size;
+	line-height: $line-height;
+  font-weight: $font-weight;
+	color: $color;
+}
+
+//@include font-style(Roboto,rem(43),lh(50,43),700,red)
+
+;
+
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result
+}
+
+;
+
+@function em($px) {
+	$result: math.div($px, 16) + em;
+	@return $result
+}
+
+;
+
+@function lh($px1, $px2) {
+	$result: math.div($px1, $px2);
+	@return $result
+}
+
+;
+
+@function pm($px1, $px2) {
+	$result: math.div($px1, $px2) + em;
+	@return $result
+}
+
+;
+
+@mixin center (){
+  align-items: center;
+  justify-content: center;
+}
